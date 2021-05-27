@@ -190,15 +190,36 @@ th, td{
     }
     nav ul li{
         display: block;
-        margin-right: 50px;
-        margin-right: 10px;
+        margin-right: 20px;
         margin-bottom: 10px;
     }
     nav ul li a{
-        color: #fff;
+        color: green;
+        color: green;
     }
     .menu-icon{
         display: block;
         cursor: pointer;
+    }
+    
+}
+@media only screen and (max-width: 600px){
+    body{
+        background-color: lightblue;
+    }
+    section img{
+        display: none;
+    }
+    .col-2{
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 600px){
+    body{
+        background-color: rgb(202, 233, 202);
+    }
+    section img{
+        max-width: 800px;
     }
 }
