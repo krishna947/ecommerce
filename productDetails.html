@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <h1>BOOK<span>SITE</span>.com</h1>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </header>
+
+    <!-- ---------- product-details -------  -->
+
+    <div class="small-container ">
+        <div class="categories">
+            <hr>
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/science10.jpeg">
+                </div>
+                <div class="col-2">
+                    <h2>All in One</h2>
+                    <p>Science book</p>
+                    <p>Price: Rs: 50</p>
+                    <p>Quantity:</p>
+                    <input type="number" value="1">
+
+                    <br>
+                    <a href="" class="btn">Add to Cart</a>
+                    <p> Best Selling Series form class 6th-12th. Covers complete theory, practice and assessment of
+                        Science for class 10.</p>
+                </div>
+
+            </div>
+            <hr>
+        </div>
+    </div>
+
+
+    <!-- -------- js for toggle menu ---------  -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>
