@@ -42,7 +42,7 @@ a:hover{
 .logo span{
     color:orangered;
 }
-.container{
+.containers{
     max-width: 1300px;
     margin: auto;
     background-color: ;
@@ -61,7 +61,7 @@ a:hover{
     width: 1300px;
 }
 .small-container p{
-    text-align: center;
+    margin-left: 30px;
     font-size: 30px;
 }
 .categories{
@@ -164,17 +164,28 @@ input:focus{
 }
 
 /* --------- cart ---------  */
-table{
-    border: 2px solid black;
-    margin: 100px;
-    flex-basis: 100%;
-}
-th, td{
-    border: 2px solid rebeccapurple;
-    text-align: center;
-    font-size: 20px;
-}
 
+.col-9{
+    flex-basis: 50%;
+    margin-bottom: 30px;
+}
+.col-9 p{
+    margin-bottom: 10px;
+}
+.col-9 input{
+    margin-left: 30px;
+    margin-bottom: 10px;
+    width: 80%;
+}
+.checkout h2{
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    font-size: 30px;
+}
+.heading-3{
+    margin-left: 30px;
+}
 
 
 @media only screen and (max-width: 800px){
@@ -195,7 +206,6 @@ th, td{
     }
     nav ul li a{
         color: green;
-        color: green;
     }
     .menu-icon{
         display: block;
@@ -211,6 +221,9 @@ th, td{
         display: none;
     }
     .col-2{
+        flex-basis: 100%;
+    }
+    .col-9{
         flex-basis: 100%;
     }
 }
